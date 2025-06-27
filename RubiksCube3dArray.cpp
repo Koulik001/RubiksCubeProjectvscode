@@ -1,6 +1,6 @@
 #include "header.h"
 
-class RubiksCube3dArray: RubiksCube{
+class RubiksCube3dArray: public RubiksCube{
     public:
         char cube[6][3][3];
         void rotateFace(int ind){
@@ -34,7 +34,6 @@ class RubiksCube3dArray: RubiksCube{
                 for(int j = 0; j < 3; j++){
                     for(int k = 0; k < 3; k++){
                         cube[i][j][k] = getColorLetter(COLOR(i));
-                        cout<<"1";
                     }
                 }
             }
@@ -236,7 +235,7 @@ class RubiksCube3dArray: RubiksCube{
             return *this;
         }
 
-        bool operator==(const RubiksCube3dArray& r){
+        bool operator==(const RubiksCube3dArray& r) const{
             for(int i = 0; i < 3; i++){
                 for(int j = 0; j < 3; j++){
                     for(int k = 0; k < 3; k++){
