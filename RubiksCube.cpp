@@ -107,6 +107,51 @@ RubiksCube& RubiksCube::move(MOVE m){
     }
 }
 
+//invert move
+RubiksCube& RubiksCube::invert(MOVE m){
+    switch (m)
+    {
+    case MOVE::L:
+        return this->lprime();
+    case MOVE::LPRIME:
+        return this->l();
+    case MOVE::L2:
+        return this->l2();
+    case MOVE::R:
+        return this->r();
+    case MOVE::RPRIME:
+        return this->rprime();
+    case MOVE::R2:
+        return this->r2();
+    case MOVE::U:
+        return this->u();
+    case MOVE::UPRIME:
+        return this->uprime();
+    case MOVE::U2:
+        return this->u2();
+    case MOVE::D:
+        return this->d();
+    case MOVE::DPRIME:
+        return this->dprime();
+    case MOVE::D2:
+        return this->d2();
+    case MOVE::F:
+        return this->f();
+    case MOVE::FPRIME:
+        return this->fprime();
+    case MOVE::F2:
+        return this->f2();
+    case MOVE::B:
+        return this->b();
+    case MOVE::B2:
+        return this->b2();
+    case MOVE::BPRIME:
+        return this->bprime();
+    default:
+        break;
+    }
+}
+
 void RubiksCube::print() const{
     cout<<"Rubiks cube: \n\n";
     for(int i = 0; i < 3; i++){
