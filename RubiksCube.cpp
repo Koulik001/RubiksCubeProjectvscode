@@ -4,7 +4,6 @@ char RubiksCube::getColorLetter(COLOR c){
     switch (c)
     {
     case COLOR::WHITE:
-        /* code */
         return 'W';
     case COLOR::GREEN:
         return 'G';
@@ -118,35 +117,35 @@ RubiksCube& RubiksCube::invert(MOVE m){
     case MOVE::L2:
         return this->l2();
     case MOVE::R:
-        return this->r();
-    case MOVE::RPRIME:
         return this->rprime();
+    case MOVE::RPRIME:
+        return this->r();
     case MOVE::R2:
         return this->r2();
     case MOVE::U:
-        return this->u();
-    case MOVE::UPRIME:
         return this->uprime();
+    case MOVE::UPRIME:
+        return this->u();
     case MOVE::U2:
         return this->u2();
     case MOVE::D:
-        return this->d();
-    case MOVE::DPRIME:
         return this->dprime();
+    case MOVE::DPRIME:
+        return this->d();
     case MOVE::D2:
         return this->d2();
     case MOVE::F:
-        return this->f();
-    case MOVE::FPRIME:
         return this->fprime();
+    case MOVE::FPRIME:
+        return this->f();
     case MOVE::F2:
         return this->f2();
     case MOVE::B:
-        return this->b();
+        return this->bprime();
     case MOVE::B2:
         return this->b2();
     case MOVE::BPRIME:
-        return this->bprime();
+        return this->b();
     default:
         break;
     }
