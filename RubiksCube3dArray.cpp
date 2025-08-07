@@ -236,7 +236,7 @@ class RubiksCube3dArray: public RubiksCube{
         }
 
         bool operator==(const RubiksCube3dArray& r) const{
-            for(int i = 0; i < 3; i++){
+            for(int i = 0; i < 6; i++){
                 for(int j = 0; j < 3; j++){
                     for(int k = 0; k < 3; k++){
                         if(this->cube[i][j][k] != r.cube[i][j][k]){
@@ -249,7 +249,7 @@ class RubiksCube3dArray: public RubiksCube{
         }
 
         RubiksCube3dArray& operator=(const RubiksCube3dArray& r){
-            for(int i = 0; i < 3; i++){
+            for(int i = 0; i < 6; i++){
                 for(int j = 0; j < 3; j++){
                     for(int k = 0; k < 3; k++){
                         cube[i][j][k] = r.cube[i][j][k];
@@ -265,7 +265,7 @@ struct  Hash3d
 {
     size_t operator()(const RubiksCube3dArray& r) const{
         string s = "";
-        for(int i = 0; i < 3; i++){
+        for(int i = 0; i < 6; i++){
             for(int j = 0; j < 3; j++){
                 for(int k = 0; k < 3; k++){
                     s += r.cube[i][j][k];
