@@ -1,4 +1,8 @@
-#include "bits/stdc++.h"
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <unordered_map>
+#include <string>
 #include "DFSSolver.h"
 #include "header.h"
 #ifndef IDDFSSOLVER_H

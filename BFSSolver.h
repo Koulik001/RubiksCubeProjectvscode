@@ -1,4 +1,8 @@
-#include "bits/stdc++.h"
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <unordered_map>
+#include <string>
 #include "header.h"
 #ifndef BFSSOLVER_H
 #define BFSSOLVER_H

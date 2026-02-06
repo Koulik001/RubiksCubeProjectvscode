@@ -1,6 +1,10 @@
 #ifndef HEADER_H
 #define HEADER_H
-#include "bits/stdc++.h"
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <unordered_map>
+#include <string>
 using namespace std;
 
 class RubiksCube{

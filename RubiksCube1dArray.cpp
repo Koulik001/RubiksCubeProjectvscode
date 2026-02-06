@@ -1,4 +1,8 @@
-#include "bits/stdc++.h"
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <unordered_map>
+#include <string>
 #include "header.h"
 
 class RubiksCube1dArray: public RubiksCube{
