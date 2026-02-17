@@ -1,3 +1,5 @@
+#ifndef RUBIKS_CUBE_1DARRAY_CPP
+#define RUBIKS_CUBE_1DARRAY_CPP
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -271,3 +273,5 @@ struct Hash1d{
         return hash<string>()(str);
     }
 };
+
+#endif

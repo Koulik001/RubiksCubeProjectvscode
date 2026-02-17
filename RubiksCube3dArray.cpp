@@ -1,3 +1,5 @@
+#ifndef RUBIKS_CUBE_3DARRAY_H
+#define RUBIKS_CUBE_3DARRAY_H
 #include "header.h"
 
 class RubiksCube3dArray: public RubiksCube{
@@ -275,3 +277,5 @@ struct  Hash3d
         return hash<string>()(s);
     }
 };
+
+#endif

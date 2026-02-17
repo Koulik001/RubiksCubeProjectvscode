@@ -71,6 +71,10 @@ class RubiksCube{
         virtual RubiksCube& d() = 0;
         virtual RubiksCube& dprime() = 0;
         virtual RubiksCube& d2() = 0;
+
+        string getCornerColors(uint8_t ind) const;
+        uint8_t getCornerPosition(uint8_t ind) const; 
+        uint8_t getCornerOrientation(uint8_t ind) const;
 };
 
 #endif
